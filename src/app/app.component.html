@@ -1,6 +1,6 @@
 <button class="btn btn-primary"
-(click) ="onAddNewArr()"
-(click) ="onToggleBtn()">Display Details</button>
+(click) ="onAddNewArr(); onToggleBtn()"
+>Display Details</button>
 <p *ngIf="btnFlag">Secret Password = tuna</p>
 <p *ngFor="let newItem of numberArr; let i = index"
 [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'transparent'}"

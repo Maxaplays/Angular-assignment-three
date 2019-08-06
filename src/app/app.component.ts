@@ -10,11 +10,12 @@ export class AppComponent {
   btnFlag = true;
   numberArr = [];
   onToggleBtn() {
-    if (this.btnFlag === true) {
+    this.btnFlag = !this.btnFlag;
+    /*if (this.btnFlag === true) {
       this.btnFlag = false;
     } else {
       this.btnFlag = true;
-    }
+    }*/
   }
   onAddNewArr() {
     // this.numberArr.push(this.numberArr.length + 1);
